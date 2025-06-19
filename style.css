@@ -1,0 +1,88 @@
+#my-calendar {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background: #ddd;
+}
+
+.calendar-day {
+  padding: 15px;
+  text-align: center;
+  background: white;
+  cursor: pointer;
+}
+
+.calendar-day.event {
+  /* background-color: #ffeb3b; */
+  background-color:violet;
+}
+
+.calendar-footer {
+  text-align: center;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #ddd;
+  text-align: center;
+  font-weight: bold;
+}
+
+.calendar-weekday {
+  padding: 8px 0;
+  border: 1px solid #ccc;
+}
+
+.task-list {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#search-box {
+  border: none;
+  border-radius: 8px;
+  height: 22px;
+  margin: 5px 0;
+}
+
+#deleteBtn {
+  margin-left: 10px;
+  padding: 3px 15px;
+}
+
+.search-container {
+  background-color: #4CAF50;
+}
+
+.search-box1 {
+  border-radius: 8px;
+  border: none;
+  height: 22px;
+}
+
+.search-results {
+  text-align: center;
+  color:orangered;
+}
